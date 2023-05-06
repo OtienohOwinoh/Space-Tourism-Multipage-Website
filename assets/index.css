@@ -1,0 +1,553 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+    
+    
+}
+
+/* HOMEPAGE STYLING */
+
+.home-page {
+
+  background-image: url(/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  height: 100vh;
+ 
+}
+
+.nav-bar {
+
+    height: 70px;
+    margin: 20px 30px;
+    
+
+    
+}
+
+.homepage-logo {
+
+    margin-top: 50px;
+    float: left;
+    
+   
+   
+
+}
+
+#nav-link {
+
+    display: inline;
+   
+    display: inline-block;
+   
+   
+}
+
+.nav-links {
+
+    float: right;
+    margin-top: 35px;
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, .2);
+    
+    
+   
+    
+}
+
+.nav-links a {
+
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    padding: 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+
+   
+}
+
+
+
+.homepage-text {
+
+    width: 40%;
+    float: left;
+}
+
+
+.homepage-text h2 {
+
+    font-family: "Barlow Condensed";
+    margin: 80px 100px 20px 100px;
+    font-size: 28px;
+    color: #ffffff;
+    
+}
+
+.homepage-text h1 {
+
+    font-family: "Bellefair";
+    font-size: 150px;
+    margin: 30px 100px;
+    color: #ffffff;
+
+}
+
+
+.homepage-text p {
+
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+    margin: 10px 0 100px 100px ;
+    
+    
+
+}
+
+.homepage-btn {
+
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+
+}
+
+#btn {
+
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    bottom: 100px;
+    right: 100px;
+    position: absolute;
+    font-size: 2rem;
+    font-family: "Bellefair";
+    transition: 0.3s ease;
+}
+
+#btn:hover {
+
+    background-color: #061148;
+    color: #ffffff;
+    transform: scale(1.4) ;
+    transition: 0.3s ease;
+}
+
+.homepage-body {
+
+    float: left;
+    position: relative;
+}
+
+
+
+/* HOMEPAGE STYLING */
+
+
+/* DESTINATION  PAGE STYLING */
+
+.destination-page {
+
+    background-image: url(./destination/background-destination-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+  
+}
+
+#pick-destination-header {
+
+    color: #ffffff;
+    font-family: "Barlow Condensed";
+    font-size: 28px;
+    margin: 100px 0 10px 80px ;
+    
+
+
+}
+
+#pick-destination-header span {
+
+    color: grey;
+}
+
+#moon-image {
+
+    height: 300px;
+    float: left;
+    margin: 90px 40px 40px 70px;
+
+}
+
+.destionation-text {
+
+    float: right;
+    width: 40%;
+    margin: 40px 80px 0 50px ;
+
+}
+
+#destination-tabs{
+
+    background: none;
+    font-family:"Barlow Condensed" ;
+    margin: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+
+}
+
+#destination-tabs.active{
+
+    border-bottom: 3px solid white;
+    transition: 0.2s ease-in;
+
+    
+}
+
+#destination-tabs:hover {
+
+    border-bottom: 3px solid white;
+    transition: 0.2s ease-in;
+
+}
+
+#destination-header {
+
+    font-family: "Bellefair"; 
+    font-size: 100px;
+    margin: 20px;
+    color: #ffffff;
+
+
+}
+
+#destination-paragraph {
+
+    font-family:"Barlow Condensed" ;
+    font-size: 16px;
+    text-align: left;
+    margin: 20px ;
+    width: 65%;
+    color: #d0d6f9;
+
+}
+
+#hr-line-1 {
+
+    width: 65%;
+    margin: 20px;
+}
+
+.destination-description {
+
+    width: 70%;
+    padding: 20px;
+   
+
+}
+
+.destination-description-1 {
+
+    float: right;
+}
+
+.destination-description-2 {
+
+    float: left;
+} 
+
+#description-info {
+
+    font-family:"Barlow Condensed" ;
+    font-size: 14px;
+    margin: 10px;
+    color: #d0d6f9
+
+}
+
+#description-data-1  {
+
+    font-family: "Bellefair"; 
+    font-size: 20px;
+    color: #ffffff;
+    
+}
+
+#description-data-2  {
+
+    font-family: "Bellefair"; 
+    font-size: 20px;
+    color: #ffffff;
+    
+}
+
+
+/* DESTINATION  PAGE STYLING */
+
+/* CREW PAGE STYLING */
+
+.crew-page {
+  
+    background-image: url(./crew/background-crew-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#meet-crew-header {
+
+    color: #ffffff;
+    font-family: "Barlow Condensed";
+    font-size: 28px;
+    margin: 100px 0 10px 40px ;
+}
+
+#meet-crew-header span {
+
+    color: grey;
+}
+
+.crew-profile {
+
+    margin: 20px;
+    width: 40%;
+    float: left;
+}
+
+.profile-slider {
+
+    margin: 100px 20px;
+    border-bottom: none;
+    
+
+}
+
+.profile-slider  div {
+
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: grey;
+    margin-right:15px ;
+    display: inline-block;
+    cursor: pointer;
+    
+
+}
+
+.profile-slider  div.active {
+
+    background-color: white;
+}
+
+.profile-slider  div:hover {
+
+    background-color: white;
+    transition: 2ms ease-out;
+    transform: scale(1.2);
+
+}
+
+
+
+
+
+#crew-designation {
+
+    font-family: "Bellefair"; 
+    font-size: 25px;
+    color: #d0d6f9;
+    margin: 20px;
+
+}
+
+#crew-name {
+
+    font-family: "Bellefair"; 
+    font-size: 58px;
+    color: #ffffff;
+    margin: 20px;
+
+}
+ #crew-description {
+
+    font-family:"Barlow Condensed" ;
+    font-size: 16px;
+    text-align: left;
+    margin: 20px ;
+    width: 65%;
+    color: #d0d6f9;
+
+ }
+
+ #crew-image {
+
+     float: right;
+   position: absolute;
+   bottom: 10px;
+   height: 500px;
+ }
+
+
+
+/* CREW PAGE STYLING */
+
+
+
+/* TECHNOLOGY PAGE STYLING */
+
+
+.technology-page {
+  
+    background-image: url(./technology/background-technology-desktop.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#technology-header {
+
+    color: #ffffff;
+    font-family: "Barlow Condensed";
+    font-size: 28px;
+    margin: 100px 0 40px 40px ;
+}
+
+#technology-header span {
+
+    color: grey;
+}
+
+.technology-body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;  
+     
+}
+
+#technology-navigation {
+
+    
+    /* width: 10%; */
+    
+}
+
+#tech-nav-link {
+
+    list-style-type: none;
+    margin: 20px 0px;
+    text-align: center;
+    line-height: 55px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-family: "Bellefair"; 
+    color: black;
+    background-color: #ffffff;
+
+    
+   
+  
+}
+
+#tech-nav-link:hover {
+
+    background-color: #061148;
+    border: 1px solid #ffffff;
+    color: white;
+}
+
+.technology-description {
+
+    width: 30%;
+    position: absolute;
+    right: 550px;
+
+   
+    
+   
+    
+}
+
+#launch-vehicle {
+
+    width: 30%;
+    height: 400px;
+    position: absolute;
+    right: 0;
+   
+}
+
+#tech-subheading {
+
+    color: #D0D6F9;
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    margin-bottom: 20px;
+   
+
+}
+
+#terminology {
+
+    font-family: "Bellefair"; 
+    font-size: 38px;
+    color: #ffffff;
+    margin-bottom: 10px;
+
+}
+
+#terminology-description {
+
+    font-family:"Barlow Condensed" ;
+    font-size: 16px;
+    text-align: left;
+    width: 85%;
+    color: #d0d6f9;
+
+}
+
+
+
+
+     
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TECHNOLOGY PAGE STYLING */

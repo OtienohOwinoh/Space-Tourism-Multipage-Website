@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="technology-page">
+
+        <div class="nav-bar">
+    
+            <div class="homepage-logo">
+    
+                <img src="./assets/shared/logo.svg" alt="logo">
+    
+            </div>
+    
+        
+            <ul class="nav-links">
+    
+           
+            <li id="nav-link"> <a href="./index.html"> 00 Home</a></li>
+            <li id="nav-link">  <a href="./destination.html"> 01 Destination</a></li>
+            <li id="nav-link">  <a href="./crew.html"> 02 Crew</a></li>
+            <li id="nav-link">  <a href="./technology.html"> 03 Technology </a></li>
+           
+             </ul>
+    
+        </div>
+
+
+        <h2 id="technology-header"> <span>03</span> SPACE LAUNCH 101</h2>
+
+        <div class="technology-body">
+
+
+        <ul id="technology-navigation">
+            <li id="tech-nav-link" class="tech-nav-link">1</li>
+            <li id="tech-nav-link" class="tech-nav-link">2</li>
+            <li id="tech-nav-link" class="tech-nav-link">3</li>
+        </ul>
+
+
+       
+        <div class="technology-description">
+        <h3 id="tech-subheading">The Terminology...</h3>
+
+        <h2 id="terminology"> LAUNCH VEHICLE</h2>
+
+        <p id="terminology-description">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload
+             from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is 
+             the most powerful in operation.
+             Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+        </p>
+
+    </div>
+
+
+
+        <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="launch-vehicle" id="launch-vehicle" class="launch-vehicle">
+
+
+    </div>
+
+</div>
+
+<script>
+
+    const technology = [
+
+    {techSubheading:'The Terminology', terminology:'LAUNCH VEHICLE', techDescription:'A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earths surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, its quite an awe-inspiring sight on the launch pad!', imageUrl:'/assets/technology/image-launch-vehicle-portrait.jpg'},
+    {techSubheading:'The Terminology', terminology:'SPACEPORT', techDescription:'A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.', imageUrl:'/assets/technology/image-spaceport-portrait.jpg'},
+    {techSubheading:'The Terminology', terminology:'SPACE CAPSULE', techDescription:'A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earths atmosphere without wings. Our capsule is where youll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.', imageUrl:'/assets/technology/image-space-capsule-portrait.jpg'}
+
+    ]
+
+    const technologyNavigation = document.querySelectorAll ('#technology-navigation')
+
+    const techSubheading = document.getElementById ('tech-subheading')
+    const terminology = document.getElementById ('terminology')
+    const terminologyDescription = document.getElementById ('terminology-description')
+    const image = document.getElementById ('launch-vehicle')
+
+
+    
+    technologyNavigation[0].addEventListener('click', function(){
+
+        let element= event.target
+
+        let navigationIndex =Array.from(element.parentElement.children).indexOf(element)
+
+        console.log (technology[navigationIndex].terminology)
+
+
+        techSubheading.innerHTML = technology[navigationIndex].techSubheading
+        terminology.innerHTML = technology[navigationIndex].terminology
+        terminologyDescription.innerHTML = technology[navigationIndex].techDescription
+        image.src = technology[navigationIndex].imageUrl
+
+
+        // / Change the active radio button
+
+            technologyNavigation.forEach(technologyNavigation => {
+            technologyNavigation.className='technology-navigation'
+        })
+        element.className='technology-navigation active'
+
+
+})
+</script>
+    
+    
+</body>
+</html>
